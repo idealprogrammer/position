@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>4월 16일</title>
+<style>
+    div{
+        border: 5px solid;
+        padding: 10px;
+    }
+    .ancester{
+        border: 5px solid orange;
+        position: relative;
+    }
+    .parents{
+        border: 5px solid crimson;
+    }
+    .static{
+        border: 5px solid skyblue;
+        background-color: rgba(135, 206, 235, 0.5);
+        position: static;
+        right: 20px;
+        /* 기본 상태 안 움직임 */
+    }
+    .relative{
+        border: 5px solid yellow;
+        background-color: rgb(225, 255, 0, 0.5);
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /* 부모 위치 기준 */
+    }
+    .absolute{
+        border: 5px solid green;
+        background-color: rgba(0, 128, 0, 0.5);
+        position: absolute;
+        left: 80px;
+        top: 100px;
+        /* static이 아닌 가장 가까운 조상 위치 기준 */
+    }
+    .fixed{
+        border: 5px solid purple;
+        background-color: rgba(128, 0, 128, 0.5);
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        /* 최상위 태그 위치 기준 */
+    }
+    .Bye{
+        height: 500px;
+    }
+
+    .float{
+        border: 3px solid chocolate;
+        float: right;
+        width: 8em;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .card{
+        position: absolute;
+        border: 0px;
+    }
+    img{
+        position: absolute;
+    }
+    #a{
+        z-index: 1;
+    }
+    #b{
+        z-index: 2;
+        left: 62px;
+        top: 55px;
+    }
+    #c{
+        z-index: 3;
+        left: 120px;
+        top: 100px;
+    }
+    #d{
+        z-index: 4;
+        left: 180px;
+        top: 150px;
+    }
+</style>
+</head> 
+<body>
+    <h1>position 프로퍼티</h1>
+    <hr>
+
+    <div>Hello</div>
+    <div class="ancester">조상
+        <div class="parents">부모
+            <div>hello</div>
+            <div class="static">static</div>
+            <div class="relative">relative</div>
+            <div class="absolute">absolute</div>
+            <div class="fixed">fixed</div>
+            <div >bye</div>
+        </div>
+    </div>
+    <div class="Bye">Bye</div>
+    
+    <hr>
+    <h1>float 띄우기</h1>
+    <hr>
+
+    <p class="float">
+        다음주부터 시험이 있습니다. ㅎㅇㅌ
+    </p>
+    <p>
+        태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순태정태세문단세예성연중인명선광인효현숙경영정순헌철고순
+    </p>
+
+    <hr>
+    <h1>z-index</h1>
+    <hr>
+
+    <div class="card">
+        <img id="a" src="kanel.jpg">
+        <img id="b" src="ruin.jpg">
+        <img id="c" src="max.jpg">
+        <img id="d" src="libe.jpg">
+    </div>
+</body>
+</html>
